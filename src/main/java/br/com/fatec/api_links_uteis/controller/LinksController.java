@@ -1,6 +1,7 @@
 package br.com.fatec.api_links_uteis.controller;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -94,7 +95,7 @@ public class LinksController {
             linksDB.put(id, linkAtualizado);
             return linkAtualizado;
         }
-        return null;
+        return Collections.emptyMap();
     }
 
     // DELETE - Remover link
